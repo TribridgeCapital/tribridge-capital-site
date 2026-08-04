@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import logoAsset from "@/assets/tribridge-logo.png.asset.json";
 
 const LINKS = [
   { href: "#philosophy", label: "Philosophy" },
@@ -24,9 +25,8 @@ export function SiteHeader() {
       }`}
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
-        <a href="#top" className="flex items-baseline gap-3">
-          <span className="font-display text-lg tracking-wide text-foreground">Tribridge</span>
-          <span className="label-caps hidden sm:inline">Capital</span>
+        <a href="#top" className="flex items-center" aria-label="Tribridge Capital">
+          <img src={logoAsset.url} alt="Tribridge Capital" className="h-9 w-auto md:h-10" />
         </a>
         <nav className="hidden items-center gap-9 md:flex">
           {LINKS.map((l) => (
