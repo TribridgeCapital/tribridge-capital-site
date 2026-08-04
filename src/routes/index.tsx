@@ -7,7 +7,7 @@ import { Approach } from "@/components/approach";
 import { Team } from "@/components/team";
 import { ContactFooter } from "@/components/contact-footer";
 
-const TITLE = "Tribridge Capital — Private Investment Management";
+const TITLE = "Tribridge Capital | Tribridge Pioneer Opportunity Fund";
 const DESCRIPTION =
   "Tribridge Capital manages private investment vehicles for accredited investors across growth-stage technology, artificial intelligence, and biotechnology.";
 
