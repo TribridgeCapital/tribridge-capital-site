@@ -1,3 +1,5 @@
+import logoAsset from "@/assets/tribridge-logo.png.asset.json";
+
 export function ContactFooter() {
   return (
     <>
