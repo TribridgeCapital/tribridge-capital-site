@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import logoAsset from "@/assets/tribridge-logo.png.asset.json";
 
 const LINKS = [
   { href: "#philosophy", label: "Philosophy" },
