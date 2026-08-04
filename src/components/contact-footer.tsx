@@ -55,7 +55,11 @@ export function ContactFooter() {
             offer where unlawful.
           </p>
           <div className="mt-10 flex flex-wrap items-center justify-between gap-4 border-t border-border pt-6">
-            <span className="font-display text-sm text-foreground">Tribridge Capital</span>
+            <img
+              src={logoAsset.url}
+              alt="Tribridge Capital"
+              className="h-10 w-auto opacity-80"
+            />
             <span className="text-xs text-muted-foreground">
               © {new Date().getFullYear()} Tribridge Capital. All rights reserved.
             </span>
