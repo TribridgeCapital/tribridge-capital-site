@@ -15,7 +15,9 @@ export function Hero() {
         }}
       />
       <div className="relative max-w-5xl">
-        <h2 className="label-caps">Tribridge Pioneer Opportunity Fund</h2>
+        <h2 className="font-display text-xl tracking-wide text-gold md:text-2xl">
+          Tribridge Pioneer Opportunity Fund
+        </h2>
         <h1 className="mt-6 font-display text-5xl leading-tight tracking-tight text-foreground md:text-7xl">
           Tribridge Capital
         </h1>
