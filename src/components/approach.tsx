@@ -62,7 +62,7 @@ export function Approach() {
           ))}
         </ol>
 
-        <p className="mt-14 border-t border-border pt-8 text-xs font-medium uppercase tracking-[0.28em] text-gold">
+        <p className="mt-14 border-t border-border pt-8 font-display text-base tracking-wide text-gold">
           Primarily United States · Selective opportunities globally
         </p>
       </div>
