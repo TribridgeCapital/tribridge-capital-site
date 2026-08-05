@@ -37,9 +37,8 @@ export function Approach() {
           company once we are in.
         </p>
 
+        <ol className="mt-16 grid gap-px overflow-hidden bg-border md:grid-cols-2">
 
-
-        <ol className="grid gap-px overflow-hidden bg-border md:grid-cols-2">
           {BELIEFS.map((b, i) => (
             <li
               key={b.n}
