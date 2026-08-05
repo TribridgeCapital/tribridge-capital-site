@@ -5,10 +5,7 @@ export function ContactFooter() {
     <>
       <section id="contact" className="border-t border-border px-6 py-24 lg:px-24 lg:py-32">
         <div className="mx-auto max-w-6xl">
-          <div className="flex items-center gap-4">
-            <span className="h-px w-12 bg-gold" />
-            <h2 className="font-display text-3xl text-foreground">Contact</h2>
-          </div>
+          <h2 className="font-display text-3xl text-foreground">Contact</h2>
           <address className="mt-12 not-italic">
             <a
               href="mailto:ir@tribridge.capital"
