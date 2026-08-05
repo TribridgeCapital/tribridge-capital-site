@@ -1,4 +1,4 @@
-import logoAsset from "@/assets/tribridge-logo.png.asset.json";
+
 
 export function Hero() {
   return (
@@ -15,11 +15,6 @@ export function Hero() {
         }}
       />
       <div className="relative max-w-5xl">
-        <img
-          src={logoAsset.url}
-          alt="Tribridge Capital"
-          className="mb-10 h-14 w-auto md:h-16"
-        />
         <h2 className="label-caps">Tribridge Pioneer Opportunity Fund</h2>
         <h1 className="mt-6 font-display text-5xl leading-tight tracking-tight text-foreground md:text-7xl">
           Tribridge Capital
