@@ -34,7 +34,7 @@ export function ContactFooter() {
           </p>
           <div className="mt-10 flex flex-wrap items-center justify-between gap-4 border-t border-border pt-6">
             <img src={logoAsset.url} alt="Tribridge Capital" className="h-10 w-auto opacity-80" />
-            <span className="text-xs text-muted-foreground">
+            <span className="text-base text-muted-foreground">
               © {new Date().getFullYear()} Tribridge Capital · 1760 2nd Ave, New York, NY 10128 ·{" "}
               <a href="mailto:ir@tribridge.capital" className="text-gold hover:text-parchment">
                 ir@tribridge.capital
