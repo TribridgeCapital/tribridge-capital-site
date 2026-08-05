@@ -33,7 +33,7 @@ export function SiteHeader() {
             <a
               key={l.href}
               href={l.href}
-              className="text-sm text-muted-foreground transition-colors hover:text-gold"
+              className="text-base text-muted-foreground transition-colors hover:text-gold"
             >
               {l.label}
             </a>
@@ -41,7 +41,7 @@ export function SiteHeader() {
         </nav>
         <a
           href="#contact"
-          className="border-b border-gold/60 pb-0.5 text-sm text-gold transition-colors hover:border-gold hover:text-parchment"
+          className="border-b border-gold/60 pb-0.5 text-base text-gold transition-colors hover:border-gold hover:text-parchment"
         >
           Get in touch
         </a>

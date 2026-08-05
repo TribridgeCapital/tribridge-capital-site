@@ -25,20 +25,20 @@ export function Hero() {
           A New York–based investment firm focused on sought-after pre-IPO and IPO technology
           unicorns, artificial intelligence, and biotechnology.
         </p>
-        <p className="mt-8 max-w-2xl text-sm leading-relaxed text-muted-foreground md:text-base">
+        <p className="mt-8 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">
           We combine deep technical judgment with capital-markets experience to help investors
           build diversified private-market portfolios with long-term growth potential.
         </p>
         <div className="mt-12 flex flex-wrap gap-6">
           <a
             href="#contact"
-            className="bg-gold px-8 py-4 text-sm font-semibold uppercase tracking-widest text-primary-foreground transition-colors hover:bg-parchment"
+            className="bg-gold px-8 py-4 text-base font-semibold uppercase tracking-widest text-primary-foreground transition-colors hover:bg-parchment"
           >
             Get in touch
           </a>
           <a
             href="#approach"
-            className="border border-border px-8 py-4 text-sm font-semibold uppercase tracking-widest text-foreground transition-colors hover:border-gold hover:text-gold"
+            className="border border-border px-8 py-4 text-base font-semibold uppercase tracking-widest text-foreground transition-colors hover:border-gold hover:text-gold"
           >
             Our approach
           </a>
