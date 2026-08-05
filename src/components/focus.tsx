@@ -18,7 +18,7 @@ const AREAS = [
 
 export function Focus() {
   return (
-    <section id="focus" className="bg-navy px-6 py-24 lg:px-24 lg:py-32">
+    <section id="focus" className="bg-background px-6 py-24 lg:px-24 lg:py-32">
       <div className="mx-auto max-w-6xl">
         <h2 className="font-display text-3xl text-foreground md:text-4xl">Core focus areas</h2>
         <p className="mt-8 max-w-2xl text-base leading-relaxed text-muted-foreground">
