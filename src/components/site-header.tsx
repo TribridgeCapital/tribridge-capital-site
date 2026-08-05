@@ -46,6 +46,7 @@ export function SiteHeader() {
         >
           Get in touch
         </a>
+        </div>
       </div>
     </header>
   );
