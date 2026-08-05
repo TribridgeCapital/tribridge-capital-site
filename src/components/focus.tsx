@@ -1,16 +1,16 @@
 const AREAS = [
   {
-    n: "01",
+    n: "1",
     title: "Pre-IPO & IPO technology",
     body: "Participate in the growth of leading technology unicorns via institutional co-investment channels and other strategic opportunities. Primary focus on sought-after pre-IPO and IPO technology companies.",
   },
   {
-    n: "02",
+    n: "2",
     title: "Artificial intelligence",
     body: "AI infrastructure and developer tools, AI agents and workflow automation, and vertical AI applications.",
   },
   {
-    n: "03",
+    n: "3",
     title: "Biotechnology",
     body: "Companies with attractive long-term growth potential across anti-aging, innovative therapeutics, diagnostics, and enabling platforms.",
   },
