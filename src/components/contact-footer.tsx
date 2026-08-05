@@ -13,7 +13,7 @@ export function ContactFooter() {
             >
               ir@tribridge.capital
             </a>
-            <p className="mt-8 text-sm leading-relaxed text-muted-foreground">
+            <p className="mt-8 text-base leading-relaxed text-muted-foreground">
               Tribridge Capital
               <br />
               1760 2nd Ave, New York, NY 10128
