@@ -30,20 +30,15 @@ export function Approach() {
   return (
     <section id="approach" className="border-t border-border bg-navy">
       <div className="mx-auto max-w-6xl px-6 py-24 lg:px-24 lg:py-32">
-        <div className="grid gap-10 border-b border-border pb-14 md:grid-cols-[1fr_1.15fr] md:items-end md:gap-16">
-          <div>
-            <p className="label-caps">Approach</p>
-            <h2 className="mt-6 font-display text-3xl leading-snug text-foreground md:text-4xl">
-              Where scientific and technical depth meet scalable markets.
-            </h2>
-          </div>
-          <p className="text-sm leading-relaxed text-muted-foreground md:text-base">
-            Five beliefs shape every decision we make — how we source, how we diligence, how we
-            size, and how we stay with a company once we are in.
-          </p>
-        </div>
+        <h2 className="font-display text-3xl text-foreground">Approach</h2>
+        <p className="mt-8 max-w-2xl text-sm leading-relaxed text-muted-foreground">
+          Where scientific and technical depth meet scalable markets. Five beliefs shape every
+          decision we make — how we source, how we diligence, how we size, and how we stay with a
+          company once we are in.
+        </p>
 
-        <ol className="grid gap-px overflow-hidden bg-border md:grid-cols-2">
+        <ol className="mt-16 grid gap-px overflow-hidden bg-border md:grid-cols-2">
+
           {BELIEFS.map((b, i) => (
             <li
               key={b.n}
