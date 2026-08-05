@@ -2,10 +2,10 @@ import { useEffect, useState } from "react";
 import logoAsset from "@/assets/tribridge-logo.png.asset.json";
 
 const LINKS = [
-  { href: "#philosophy", label: "Philosophy" },
   { href: "#focus", label: "Focus" },
   { href: "#approach", label: "Approach" },
   { href: "#team", label: "Team" },
+  { href: "#contact", label: "Contact" },
 ];
 
 export function SiteHeader() {
