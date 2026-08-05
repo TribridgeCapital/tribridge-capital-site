@@ -14,7 +14,7 @@ export function Hero() {
             "radial-gradient(110% 80% at 80% 6%, color-mix(in oklab, var(--gold) 12%, transparent) 0%, transparent 60%)",
         }}
       />
-      <div className="relative max-w-5xl">
+      <div className="relative mx-auto w-full max-w-6xl">
         <h2 className="font-display text-xl tracking-wide text-gold md:text-2xl">
           Tribridge Pioneer Opportunity Fund
         </h2>
