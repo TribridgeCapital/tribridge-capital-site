@@ -30,10 +30,7 @@ export function Team() {
   return (
     <section id="team" className="bg-navy px-6 py-24 lg:px-24 lg:py-32">
       <div className="mx-auto max-w-6xl">
-        <div className="flex items-center gap-4">
-          <span className="h-px w-12 bg-gold" />
-          <h2 className="font-display text-3xl text-foreground">General partners</h2>
-        </div>
+        <h2 className="font-display text-3xl text-foreground">General partners</h2>
         <p className="mt-8 max-w-2xl text-sm leading-relaxed text-muted-foreground">
           Tribridge General Partners bring financial and technology expertise spanning Wall Street,
           AI, internet, and biotechnology.

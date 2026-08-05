@@ -20,10 +20,7 @@ export function Focus() {
   return (
     <section id="focus" className="bg-navy px-6 py-24 lg:px-24 lg:py-32">
       <div className="mx-auto max-w-6xl">
-        <div className="flex items-center gap-4">
-          <span className="h-px w-12 bg-gold" />
-          <h2 className="font-display text-3xl text-foreground">Core focus areas</h2>
-        </div>
+        <h2 className="font-display text-3xl text-foreground">Core focus areas</h2>
         <p className="mt-8 max-w-2xl text-sm leading-relaxed text-muted-foreground">
           Focused on long-term capital appreciation with disciplined risk diversification across
           three complementary themes.

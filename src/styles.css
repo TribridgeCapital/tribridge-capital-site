@@ -108,13 +108,3 @@
   color: var(--color-gold-muted);
 }
 
-@utility rule-gold {
-  &::after {
-    content: "";
-    display: block;
-    width: 3rem;
-    height: 1px;
-    margin-top: 1.25rem;
-    background: var(--color-gold);
-  }
-}
