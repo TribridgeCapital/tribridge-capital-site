@@ -48,15 +48,19 @@
 :root {
   --radius: 0.25rem;
 
-  --navy-deep: oklch(0.18 0.045 257);
-  --navy: oklch(0.24 0.055 258);
-  --navy-soft: oklch(0.31 0.05 258);
-  --gold: oklch(0.79 0.105 84);
-  --gold-muted: oklch(0.66 0.075 82);
+  /* #102033 */
+  --navy-deep: oklch(0.235 0.032 260);
+  /* #1A2C45 */
+  --navy: oklch(0.297 0.041 260);
+  --navy-soft: oklch(0.36 0.046 260);
+  /* #FFC000 */
+  --gold: oklch(0.826 0.169 84);
+  --gold-muted: oklch(0.72 0.14 84);
   --parchment: oklch(0.96 0.012 85);
 
   --background: var(--navy-deep);
-  --foreground: oklch(0.95 0.008 85);
+  /* #F2F4F8 */
+  --foreground: oklch(0.963 0.005 260);
   --card: var(--navy);
   --card-foreground: oklch(0.95 0.008 85);
   --popover: var(--navy);
