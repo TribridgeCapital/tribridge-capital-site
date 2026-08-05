@@ -62,21 +62,21 @@
   /* #F2F4F8 */
   --foreground: oklch(0.963 0.005 260);
   --card: var(--navy);
-  --card-foreground: oklch(0.95 0.008 85);
+  --card-foreground: var(--foreground);
   --popover: var(--navy);
-  --popover-foreground: oklch(0.95 0.008 85);
+  --popover-foreground: var(--foreground);
   --primary: var(--gold);
-  --primary-foreground: oklch(0.18 0.045 257);
+  --primary-foreground: var(--navy-deep);
   --secondary: var(--navy-soft);
-  --secondary-foreground: oklch(0.95 0.008 85);
+  --secondary-foreground: var(--foreground);
   --muted: var(--navy-soft);
-  --muted-foreground: oklch(0.74 0.018 250);
+  --muted-foreground: oklch(0.78 0.012 260);
   --accent: var(--navy-soft);
-  --accent-foreground: oklch(0.95 0.008 85);
+  --accent-foreground: var(--foreground);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.98 0 0);
-  --border: oklch(0.95 0.008 85 / 14%);
-  --input: oklch(0.95 0.008 85 / 18%);
+  --border: oklch(0.963 0.005 260 / 12%);
+  --input: oklch(0.963 0.005 260 / 18%);
   --ring: var(--gold-muted);
 }
 
