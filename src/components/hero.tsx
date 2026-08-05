@@ -32,13 +32,13 @@ export function Hero() {
         <div className="mt-12 flex flex-wrap gap-6">
           <a
             href="#contact"
-            className="bg-gold px-8 py-4 text-sm font-semibold uppercase tracking-widest text-primary-foreground transition-colors hover:bg-parchment"
+            className="bg-gold px-8 py-4 text-base font-semibold uppercase tracking-widest text-primary-foreground transition-colors hover:bg-parchment"
           >
             Get in touch
           </a>
           <a
             href="#approach"
-            className="border border-border px-8 py-4 text-sm font-semibold uppercase tracking-widest text-foreground transition-colors hover:border-gold hover:text-gold"
+            className="border border-border px-8 py-4 text-base font-semibold uppercase tracking-widest text-foreground transition-colors hover:border-gold hover:text-gold"
           >
             Our approach
           </a>
