@@ -25,7 +25,7 @@ export function Hero() {
           A New York–based investment firm focused on sought-after pre-IPO and IPO technology
           unicorns, artificial intelligence, and biotechnology.
         </p>
-        <p className="mt-8 max-w-2xl text-sm leading-relaxed text-muted-foreground md:text-base">
+        <p className="mt-8 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">
           We combine deep technical judgment with capital-markets experience to help investors
           build diversified private-market portfolios with long-term growth potential.
         </p>
