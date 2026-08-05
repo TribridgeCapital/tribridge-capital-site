@@ -24,7 +24,8 @@ export function SiteHeader() {
         scrolled ? "bg-navy-deep/95 backdrop-blur border-b border-border" : "bg-transparent"
       }`}
     >
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
+      <div className="px-6 py-5 lg:px-24">
+        <div className="mx-auto flex max-w-6xl items-center justify-between">
         <a href="#top" className="flex items-center" aria-label="Tribridge Capital">
           <img src={logoAsset.url} alt="Tribridge Capital" className="h-9 w-auto md:h-10" />
         </a>
@@ -45,6 +46,7 @@ export function SiteHeader() {
         >
           Get in touch
         </a>
+        </div>
       </div>
     </header>
   );
