@@ -25,7 +25,7 @@ export function ContactFooter() {
       <footer id="legal" className="border-t border-border bg-navy px-6 py-14 lg:px-24">
         <div className="mx-auto max-w-6xl">
           <p className="label-caps">Legal</p>
-          <p className="mt-5 max-w-3xl text-xs leading-relaxed text-muted-foreground">
+          <p className="mt-5 max-w-3xl text-base leading-relaxed text-muted-foreground">
             This website is for informational purposes only and does not constitute an offer to
             sell or a solicitation of an offer to buy any securities. Any offer, if made, will be
             made only pursuant to confidential documents and only to eligible persons under
