@@ -22,7 +22,7 @@ export function ContactFooter() {
         </div>
       </section>
 
-      <footer id="legal" className="border-t border-border bg-navy px-6 py-14 lg:px-24">
+      <footer id="legal" className="border-t border-border bg-background px-6 py-14 lg:px-24">
         <div className="mx-auto max-w-6xl">
           <p className="label-caps">Legal</p>
           <p className="mt-5 max-w-3xl text-base leading-relaxed text-muted-foreground">

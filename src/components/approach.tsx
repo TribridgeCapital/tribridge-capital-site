@@ -28,7 +28,7 @@ const BELIEFS = [
 
 export function Approach() {
   return (
-    <section id="approach" className="border-t border-border bg-navy">
+    <section id="approach" className="border-t border-border bg-background">
       <div className="mx-auto max-w-6xl px-6 py-24 lg:px-24 lg:py-32">
         <h2 className="font-display text-3xl text-foreground md:text-4xl">Approach</h2>
         <p className="mt-8 max-w-2xl text-base leading-relaxed text-muted-foreground">
@@ -43,7 +43,7 @@ export function Approach() {
           {BELIEFS.map((b, i) => (
             <li
               key={b.n}
-              className={`flex gap-6 bg-navy px-2 py-10 md:px-8 ${
+              className={`flex gap-6 bg-background px-2 py-10 md:px-8 ${
                 i === BELIEFS.length - 1 && BELIEFS.length % 2 === 1 ? "md:col-span-2" : ""
               }`}
             >
