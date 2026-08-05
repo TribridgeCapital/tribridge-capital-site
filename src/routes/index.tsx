@@ -52,7 +52,6 @@ function Index() {
       <SiteHeader />
       <main>
         <Hero />
-        <Philosophy />
         <Focus />
         <Approach />
         <Team />
