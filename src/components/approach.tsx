@@ -1,26 +1,26 @@
 const BELIEFS = [
   {
-    n: "01",
+    n: "1",
     title: "Execution over narrative",
     body: "We underwrite what a company has actually built and shipped, not the story told around it.",
   },
   {
-    n: "02",
+    n: "2",
     title: "Domain depth matters",
     body: "Our partners have built, financed, and operated in the sectors we invest in, and diligence the science and the software directly.",
   },
   {
-    n: "03",
+    n: "3",
     title: "Durable advantage",
     body: "We look for defensibility that compounds — technical moats, data advantages, and hard-won distribution.",
   },
   {
-    n: "04",
+    n: "4",
     title: "Capital as a scarce resource",
     body: "A small number of decisions, sized deliberately, with reserves held for the companies that earn them.",
   },
   {
-    n: "05",
+    n: "5",
     title: "Partnership beyond the check",
     body: "We stay close to the companies we back, contributing judgment, networks, and operating experience over the long horizon.",
   },
