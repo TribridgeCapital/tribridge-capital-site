@@ -28,15 +28,22 @@ const PARTNERS = [
 
 export function Team() {
   return (
-    <section id="team" className="border-y border-border bg-navy">
-      <div className="mx-auto max-w-6xl px-6 py-24 md:py-32">
-        <p className="label-caps">General partners</p>
-        <h2 className="mt-6 max-w-3xl font-display text-3xl leading-snug md:text-4xl">
-          Wall Street, AI, and the life sciences — in the same room.
-        </h2>
+    <section id="team" className="bg-navy px-6 py-24 lg:px-24 lg:py-32">
+      <div className="mx-auto max-w-6xl">
+        <div className="flex items-center gap-4">
+          <span className="h-px w-12 bg-gold" />
+          <h2 className="font-display text-3xl text-foreground">General partners</h2>
+        </div>
+        <p className="mt-8 max-w-2xl text-sm leading-relaxed text-muted-foreground">
+          Tribridge General Partners bring financial and technology expertise spanning Wall Street,
+          AI, internet, and biotechnology.
+        </p>
         <div className="mt-16 space-y-20">
           {PARTNERS.map((p) => (
-            <article key={p.name} className="grid gap-8 border-t border-border pt-12 md:grid-cols-[200px_1fr] md:gap-14">
+            <article
+              key={p.name}
+              className="grid gap-8 border-t border-border pt-12 md:grid-cols-[200px_1fr] md:gap-14"
+            >
               <div>
                 <img
                   src={p.photo}
@@ -53,7 +60,7 @@ export function Team() {
                 <p className="label-caps mt-4">General Partner</p>
                 <div className="mt-6 space-y-4">
                   {p.paras.map((t, i) => (
-                    <p key={i} className="text-sm leading-relaxed text-muted-foreground">
+                    <p key={i} className="text-sm font-light leading-relaxed text-muted-foreground">
                       {t}
                     </p>
                   ))}

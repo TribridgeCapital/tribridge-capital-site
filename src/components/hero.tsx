@@ -1,38 +1,52 @@
+import logoAsset from "@/assets/tribridge-logo.png.asset.json";
+
 export function Hero() {
   return (
-    <section id="top" className="relative overflow-hidden">
+    <section
+      id="top"
+      className="relative flex min-h-screen flex-col justify-center overflow-hidden border-b border-border px-6 py-32 lg:px-24"
+    >
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-0 opacity-70"
+        className="pointer-events-none absolute inset-0 opacity-60"
         style={{
           background:
-            "radial-gradient(120% 90% at 78% 8%, color-mix(in oklab, var(--gold) 16%, transparent) 0%, transparent 58%)",
+            "radial-gradient(110% 80% at 80% 6%, color-mix(in oklab, var(--gold) 12%, transparent) 0%, transparent 60%)",
         }}
       />
-      <div className="relative mx-auto max-w-6xl px-6 pb-24 pt-40 md:pb-36 md:pt-52">
-        <p className="label-caps">Private investment management · New York</p>
-        <h1 className="mt-8 max-w-4xl font-display text-4xl leading-[1.15] text-foreground md:text-6xl md:leading-[1.1]">
-          Conviction capital for the companies
-          <span className="text-gold"> defining the next decade.</span>
+      <div className="relative max-w-5xl">
+        <img
+          src={logoAsset.url}
+          alt="Tribridge Capital"
+          className="mb-10 h-14 w-auto md:h-16"
+        />
+        <h2 className="label-caps">Tribridge Pioneer Opportunity Fund</h2>
+        <h1 className="mt-6 font-display text-5xl leading-tight tracking-tight text-foreground md:text-7xl">
+          Tribridge Capital
         </h1>
-        <p className="mt-8 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">
-          Tribridge Capital manages private investment vehicles for accredited investors, with a
-          focus on growth-stage and pre-IPO technology, artificial intelligence, and biotechnology.
-          Our partnerships are private and relationship-based.
+        <p className="mt-8 max-w-3xl text-xl font-light leading-relaxed text-foreground/90 md:text-2xl">
+          A New York–based investment firm focused on sought-after pre-IPO and IPO technology
+          unicorns, artificial intelligence, and biotechnology.
         </p>
-        <div className="mt-12 flex flex-wrap items-center gap-x-10 gap-y-4">
+        <p className="mt-8 max-w-2xl text-sm leading-relaxed text-muted-foreground md:text-base">
+          We combine deep technical judgment with capital-markets experience to help investors
+          build diversified private-market portfolios with long-term growth potential.
+        </p>
+        <div className="mt-12 flex flex-wrap gap-6">
           <a
-            href="mailto:ir@tribridge.capital?subject=Introduction%20to%20Tribridge%20Capital"
-            className="inline-flex items-center bg-gold px-7 py-3 text-sm font-medium tracking-wide text-primary-foreground transition-colors hover:bg-parchment"
+            href="#contact"
+            className="bg-gold px-8 py-4 text-sm font-semibold uppercase tracking-widest text-primary-foreground transition-colors hover:bg-parchment"
           >
-            Request an introduction
+            Get in touch
           </a>
-          <a href="#philosophy" className="text-sm text-muted-foreground hover:text-gold">
-            How we invest
+          <a
+            href="#approach"
+            className="border border-border px-8 py-4 text-sm font-semibold uppercase tracking-widest text-foreground transition-colors hover:border-gold hover:text-gold"
+          >
+            Our approach
           </a>
         </div>
       </div>
-      <div className="mx-auto h-px max-w-6xl bg-border" />
     </section>
   );
 }

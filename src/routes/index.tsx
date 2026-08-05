@@ -1,7 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteHeader } from "@/components/site-header";
 import { Hero } from "@/components/hero";
-import { Philosophy } from "@/components/philosophy";
 import { Focus } from "@/components/focus";
 import { Approach } from "@/components/approach";
 import { Team } from "@/components/team";
@@ -9,7 +8,7 @@ import { ContactFooter } from "@/components/contact-footer";
 
 const TITLE = "Tribridge Capital | Tribridge Pioneer Opportunity Fund";
 const DESCRIPTION =
-  "Tribridge Capital manages private investment vehicles for accredited investors across growth-stage technology, artificial intelligence, and biotechnology.";
+  "New York investment firm focused on pre-IPO and IPO technology, artificial intelligence, and biotechnology.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -53,7 +52,6 @@ function Index() {
       <SiteHeader />
       <main>
         <Hero />
-        <Philosophy />
         <Focus />
         <Approach />
         <Team />

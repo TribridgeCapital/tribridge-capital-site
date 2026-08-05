@@ -2,10 +2,10 @@ import { useEffect, useState } from "react";
 import logoAsset from "@/assets/tribridge-logo.png.asset.json";
 
 const LINKS = [
-  { href: "#philosophy", label: "Philosophy" },
   { href: "#focus", label: "Focus" },
   { href: "#approach", label: "Approach" },
   { href: "#team", label: "Team" },
+  { href: "#contact", label: "Contact" },
 ];
 
 export function SiteHeader() {
@@ -40,10 +40,10 @@ export function SiteHeader() {
           ))}
         </nav>
         <a
-          href="mailto:ir@tribridge.capital?subject=Introduction%20to%20Tribridge%20Capital"
+          href="#contact"
           className="border-b border-gold/60 pb-0.5 text-sm text-gold transition-colors hover:border-gold hover:text-parchment"
         >
-          Request an introduction
+          Get in touch
         </a>
       </div>
     </header>
