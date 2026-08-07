@@ -1,3 +1,7 @@
+import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
+import { tokens } from "@/theme/tokens";
+
 const BELIEFS = [
   {
     n: "1",
@@ -26,46 +30,125 @@ const BELIEFS = [
   },
 ];
 
-export function Approach() {
+export default function Approach() {
   return (
-    <section
+    <Box
+      component="section"
       id="approach"
-      className="border-t border-border bg-background px-6 py-24 lg:px-24 lg:py-32"
+      sx={{
+        borderTop: `1px solid ${tokens.border}`,
+        bgcolor: tokens.navyDeep,
+        px: { xs: 3, lg: 12 },
+        py: { xs: 12, lg: 16 },
+      }}
     >
-      <div className="mx-auto max-w-6xl">
-        <h2 className="font-display text-3xl text-foreground md:text-4xl">Approach</h2>
-        <p className="mt-8 max-w-2xl text-base leading-relaxed text-muted-foreground">
-
+      <Box sx={{ mx: "auto", maxWidth: 1152 }}>
+        <Typography
+          component="h2"
+          sx={{
+            fontFamily: 'var(--font-display), "Libre Baskerville", Georgia, serif',
+            fontSize: { xs: "1.875rem", md: "2.25rem" },
+            color: tokens.foreground,
+          }}
+        >
+          Approach
+        </Typography>
+        <Typography
+          sx={{
+            mt: 4,
+            maxWidth: 672,
+            fontSize: "1rem",
+            lineHeight: 1.625,
+            color: tokens.mutedForeground,
+          }}
+        >
           Where scientific and technical depth meet scalable markets. Five beliefs shape every
           decision we make — how we source, how we diligence, how we size, and how we stay with a
           company once we are in.
-        </p>
+        </Typography>
 
-        <ol className="mt-16 grid gap-px overflow-hidden bg-border md:grid-cols-2">
-
+        <Box
+          component="ol"
+          sx={{
+            mt: 8,
+            m: 0,
+            p: 0,
+            listStyle: "none",
+            display: "grid",
+            gap: "1px",
+            overflow: "hidden",
+            bgcolor: tokens.border,
+            gridTemplateColumns: { xs: "1fr", md: "repeat(2, 1fr)" },
+          }}
+        >
           {BELIEFS.map((b, i) => (
-            <li
+            <Box
               key={b.n}
-              className={`flex gap-6 bg-background px-2 py-10 md:px-8 ${
-                i === BELIEFS.length - 1 && BELIEFS.length % 2 === 1 ? "md:col-span-2" : ""
-              }`}
+              component="li"
+              sx={{
+                display: "flex",
+                gap: 3,
+                bgcolor: tokens.navyDeep,
+                px: { xs: 1, md: 4 },
+                py: 5,
+                gridColumn: {
+                  xs: "auto",
+                  md: i === BELIEFS.length - 1 && BELIEFS.length % 2 === 1 ? "1 / -1" : "auto",
+                },
+              }}
             >
-              <span className="font-display text-3xl leading-none text-gold/70">{b.n}</span>
-              <div>
-                <h3 className="font-display text-2xl leading-snug text-foreground">{b.title}</h3>
-                <p className="mt-3 max-w-xl text-base leading-relaxed text-muted-foreground">
-
+              <Typography
+                sx={{
+                  fontFamily: 'var(--font-display), "Libre Baskerville", Georgia, serif',
+                  fontSize: "1.875rem",
+                  lineHeight: 1,
+                  color: "rgba(255, 192, 0, 0.7)",
+                }}
+              >
+                {b.n}
+              </Typography>
+              <Box>
+                <Typography
+                  component="h3"
+                  sx={{
+                    fontFamily: 'var(--font-display), "Libre Baskerville", Georgia, serif',
+                    fontSize: "1.5rem",
+                    lineHeight: 1.375,
+                    color: tokens.foreground,
+                  }}
+                >
+                  {b.title}
+                </Typography>
+                <Typography
+                  sx={{
+                    mt: 1.5,
+                    maxWidth: 576,
+                    fontSize: "1rem",
+                    lineHeight: 1.625,
+                    color: tokens.mutedForeground,
+                  }}
+                >
                   {b.body}
-                </p>
-              </div>
-            </li>
+                </Typography>
+              </Box>
+            </Box>
           ))}
-        </ol>
+        </Box>
 
-        <p className="mt-14 border-t border-border pt-8 font-display text-base tracking-wide text-gold">
+        <Typography
+          sx={{
+            mt: 7,
+            borderTop: `1px solid ${tokens.border}`,
+            pt: 4,
+            fontFamily: 'var(--font-display), "Libre Baskerville", Georgia, serif',
+            fontSize: "1rem",
+            letterSpacing: "0.025em",
+            color: tokens.gold,
+          }}
+        >
           Primarily United States · Selective opportunities globally
-        </p>
-      </div>
-    </section>
+        </Typography>
+      </Box>
+    </Box>
   );
 }

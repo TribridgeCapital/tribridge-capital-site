@@ -1,10 +1,11 @@
-<!-- LOVABLE:BEGIN -->
-> [!IMPORTANT]
-> This project is connected to [Lovable](https://lovable.dev). Avoid rewriting
-> published git history — force pushing, or rebasing/amending/squashing commits
-> that are already pushed — as it rewrites history on Lovable's side and the
-> user will likely lose their project history.
->
-> Commits you push to the connected branch sync back to Lovable and show up in
-> the editor, so keep the branch in a working state.
-<!-- LOVABLE:END -->
+# Agent notes — Tribridge Capital site
+
+This repo is a **Next.js static-export** site hosted on **GitHub Pages** (same pattern as mileclerk-site).
+
+- Live app: repository root (`src/`, `public/`, `next.config.ts`)
+- Archive: [`legacy/lovable-tanstack/`](legacy/lovable-tanstack/) — previous Lovable / TanStack Start project; not deployed
+- Deploy: `.github/workflows/deploy.yml` on push to `main`
+
+**Disconnect Lovable in the Lovable UI** (agents cannot do this). Then do not reconnect it to this repository — Git sync would fight the static Next.js stack. If Lovable is needed again, use a separate repository.
+
+Preserve 506(b) constraints: `noindex` / `nofollow` and disallow-all robots.

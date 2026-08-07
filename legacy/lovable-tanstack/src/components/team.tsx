@@ -1,8 +1,3 @@
-import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
-import Link from "@mui/material/Link";
-import { tokens } from "@/theme/tokens";
-
 const PARTNERS = [
   {
     name: "David Hui Shao",
@@ -26,100 +21,38 @@ const PARTNERS = [
   },
 ];
 
-export default function Team() {
+export function Team() {
   return (
-    <Box
-      component="section"
-      id="team"
-      sx={{ bgcolor: tokens.navyDeep, px: { xs: 3, lg: 12 }, py: { xs: 12, lg: 16 } }}
-    >
-      <Box sx={{ mx: "auto", maxWidth: 1152 }}>
-        <Typography
-          component="h2"
-          sx={{
-            fontFamily: 'var(--font-display), "Libre Baskerville", Georgia, serif',
-            fontSize: { xs: "1.875rem", md: "2.25rem" },
-            color: tokens.foreground,
-          }}
-        >
-          General partners
-        </Typography>
-        <Typography
-          sx={{
-            mt: 4,
-            maxWidth: 672,
-            fontSize: "1rem",
-            lineHeight: 1.625,
-            color: tokens.mutedForeground,
-          }}
-        >
+    <section id="team" className="bg-background px-6 py-24 lg:px-24 lg:py-32">
+      <div className="mx-auto max-w-6xl">
+        <h2 className="font-display text-3xl text-foreground md:text-4xl">General partners</h2>
+        <p className="mt-8 max-w-2xl text-base leading-relaxed text-muted-foreground">
           Tribridge General Partners bring financial and technology expertise spanning Wall Street,
           AI, internet, and biotechnology.
-        </Typography>
-        <Box sx={{ mt: 8, display: "flex", flexDirection: "column", gap: 10 }}>
+        </p>
+        <div className="mt-16 space-y-20">
           {PARTNERS.map((p) => (
-            <Box
-              key={p.name}
-              component="article"
-              sx={{ borderTop: `1px solid ${tokens.border}`, pt: 6 }}
-            >
-              <Typography
-                component="h3"
-                sx={{
-                  fontFamily: 'var(--font-display), "Libre Baskerville", Georgia, serif',
-                  fontSize: "1.5rem",
-                  color: tokens.foreground,
-                }}
-              >
-                {p.name}
-              </Typography>
-              <Typography sx={{ mt: 1, fontSize: "1rem", color: tokens.gold }}>{p.creds}</Typography>
-              <Typography
-                sx={{
-                  mt: 2,
-                  fontFamily: 'var(--font-sans), "IBM Plex Sans", system-ui, sans-serif',
-                  fontSize: "0.9375rem",
-                  letterSpacing: "0.18em",
-                  textTransform: "uppercase",
-                  color: tokens.goldMuted,
-                }}
-              >
-                General Partner
-              </Typography>
-              <Box sx={{ mt: 3, maxWidth: "72ch", display: "flex", flexDirection: "column", gap: 2 }}>
+            <article key={p.name} className="border-t border-border pt-12">
+              <h3 className="font-display text-2xl text-foreground">{p.name}</h3>
+              <p className="mt-2 text-base text-gold">{p.creds}</p>
+              <p className="label-caps mt-4">General Partner</p>
+              <div className="mt-6 max-w-[72ch] space-y-4">
                 {p.paras.map((t, i) => (
-                  <Typography
-                    key={i}
-                    sx={{
-                      fontSize: "1rem",
-                      fontWeight: 300,
-                      lineHeight: 1.625,
-                      color: tokens.mutedForeground,
-                    }}
-                  >
+                  <p key={i} className="text-base font-light leading-relaxed text-muted-foreground">
                     {t}
-                  </Typography>
+                  </p>
                 ))}
-              </Box>
-              <Link
+              </div>
+              <a
                 href={`mailto:${p.email}`}
-                underline="none"
-                sx={{
-                  mt: 3,
-                  display: "inline-block",
-                  borderBottom: "1px solid rgba(255, 192, 0, 0.5)",
-                  pb: 0.25,
-                  fontSize: "1rem",
-                  color: tokens.gold,
-                  "&:hover": { color: tokens.parchment },
-                }}
+                className="mt-6 inline-block border-b border-gold/50 pb-0.5 text-base text-gold hover:text-parchment"
               >
                 {p.email}
-              </Link>
-            </Box>
+              </a>
+            </article>
           ))}
-        </Box>
-      </Box>
-    </Box>
+        </div>
+      </div>
+    </section>
   );
 }
