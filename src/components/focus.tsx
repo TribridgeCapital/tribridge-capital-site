@@ -1,3 +1,7 @@
+import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
+import { tokens } from "@/theme/tokens";
+
 const AREAS = [
   {
     n: "1",
@@ -16,30 +20,91 @@ const AREAS = [
   },
 ];
 
-export function Focus() {
+export default function Focus() {
   return (
-    <section id="focus" className="bg-background px-6 py-24 lg:px-24 lg:py-32">
-      <div className="mx-auto max-w-6xl">
-        <h2 className="font-display text-3xl text-foreground md:text-4xl">Core focus areas</h2>
-        <p className="mt-8 max-w-2xl text-base leading-relaxed text-muted-foreground">
-
+    <Box
+      component="section"
+      id="focus"
+      sx={{ bgcolor: tokens.navyDeep, px: { xs: 3, lg: 12 }, py: { xs: 12, lg: 16 } }}
+    >
+      <Box sx={{ mx: "auto", maxWidth: 1152 }}>
+        <Typography
+          component="h2"
+          sx={{
+            fontFamily: 'var(--font-display), "Libre Baskerville", Georgia, serif',
+            fontSize: { xs: "1.875rem", md: "2.25rem" },
+            color: tokens.foreground,
+          }}
+        >
+          Core focus areas
+        </Typography>
+        <Typography
+          sx={{
+            mt: 4,
+            maxWidth: 672,
+            fontSize: "1rem",
+            lineHeight: 1.625,
+            color: tokens.mutedForeground,
+          }}
+        >
           Focused on long-term capital appreciation with disciplined risk diversification across
           three complementary themes.
-        </p>
-        <div className="mt-16 grid gap-12 md:grid-cols-3">
+        </Typography>
+        <Box
+          sx={{
+            mt: 8,
+            display: "grid",
+            gap: 6,
+            gridTemplateColumns: { xs: "1fr", md: "repeat(3, 1fr)" },
+          }}
+        >
           {AREAS.map((a) => (
-            <article key={a.n} className="group">
-              <span className="block font-display text-4xl text-gold opacity-60 transition-opacity group-hover:opacity-100">
+            <Box
+              key={a.n}
+              component="article"
+              sx={{
+                "&:hover .area-num": { opacity: 1 },
+              }}
+            >
+              <Typography
+                className="area-num"
+                sx={{
+                  display: "block",
+                  fontFamily: 'var(--font-display), "Libre Baskerville", Georgia, serif',
+                  fontSize: "2.25rem",
+                  color: tokens.gold,
+                  opacity: 0.6,
+                  transition: "opacity 0.2s",
+                }}
+              >
                 {a.n}
-              </span>
-              <h3 className="mt-6 text-2xl font-semibold tracking-wide text-foreground">
+              </Typography>
+              <Typography
+                component="h3"
+                sx={{
+                  mt: 3,
+                  fontSize: "1.5rem",
+                  fontWeight: 600,
+                  letterSpacing: "0.025em",
+                  color: tokens.foreground,
+                }}
+              >
                 {a.title}
-              </h3>
-              <p className="mt-4 font-light leading-relaxed text-muted-foreground">{a.body}</p>
-            </article>
+              </Typography>
+              <Typography
+                sx={{
+                  mt: 2,
+                  fontWeight: 300,
+                  lineHeight: 1.625,
+                  color: tokens.mutedForeground,
+                }}
+              >
+                {a.body}
+              </Typography>
+            </Box>
           ))}
-        </div>
-      </div>
-    </section>
+        </Box>
+      </Box>
+    </Box>
   );
 }

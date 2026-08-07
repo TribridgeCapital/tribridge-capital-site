@@ -1,0 +1,17 @@
+:root {
+  --radius: 0.25rem;
+
+  --navy-deep: #102033;
+  --navy: #1a2c45;
+  --navy-soft: #243652;
+  --gold: #ffc000;
+  --gold-muted: #d4a017;
+  --parchment: #f5f0e6;
+  --foreground: #f2f4f8;
+  --muted-foreground: #b8c0cc;
+  --border: rgba(242, 244, 248, 0.12);
+
+  --background: var(--navy-deep);
+  --primary: var(--gold);
+  --primary-foreground: var(--navy-deep);
+}
